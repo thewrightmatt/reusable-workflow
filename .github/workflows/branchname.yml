@@ -6,6 +6,7 @@ on:
       sanitized-branch-name:
         description: 'Sanitized branch name'
         required: true
+        type: string
 
 jobs:
   example-reusable-job:
