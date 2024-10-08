@@ -1,0 +1,16 @@
+name: Branch Name
+
+on:
+  workflow_call:
+    inputs:
+      sanitized-branch-name:
+        description: 'Sanitized branch name'
+        required: true
+
+jobs:
+  example-reusable-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print sanitized branch name
+        run: |
+            echo "Sanitized Branch Name: ${{ inputs.sanitized-branch-name }}"
